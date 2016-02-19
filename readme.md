@@ -3,8 +3,12 @@ FFmpegPlayer-iOS - A movie player for iOS based on FFmpeg.
 
 ### Build Instructions
 
-First you need to download, configure and build [FFmpeg](http://ffmpeg.org/index.html). For this, open console and type in:
-	
+First you need to download, configure and build [FFmpeg](http://ffmpeg.org/index.html).
+
+Before that, edit the ``Rakefile`` and change the ``SDK_VERSION`` to the one you have installed. Look in the ``/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/developer/SDKs/`` directory to find out what SDKs are existed in your OS
+
+Build the ffmpeg:
+
 	cd kxmovie
 	git submodule update --init	
 	rake
@@ -21,7 +25,7 @@ For play movies:
 	vc = [KxMovieViewController movieViewControllerWithContentPath:path parameters:nil];
 	[self presentViewController:vc animated:YES completion:nil];
 
-See KxMovieExample demo project as example of using.
+See KxMovieExample demo project as example of using (see below).
 
 Also, you can include kxmovie as subproject. Look at [kxtorrent](https://github.com/kolyvan/kxtorrent) as example.
 
@@ -36,6 +40,20 @@ At least iOS 7.0 and iPhone 4 (because of iOS 7 requirements).
 <img src="https://raw.github.com/atelierdumobile/FFmpegPlayer-iOS/master/readme-media/screenshot-movie.png" alt="Movie View" width="50%">
 <img src="https://raw.github.com/atelierdumobile/FFmpegPlayer-iOS/master/readme-media/screenshot-info.png" alt="Info View" width="50%">
 <img src="https://raw.github.com/atelierdumobile/FFmpegPlayer-iOS/master/readme-media/screenshot-movie-landscape.png" alt="Movie View Landscape" width="50%">
+
+### Runnning KxMovieExample project
+
+First, ensure you have Pods installed. If not, exec this command:
+
+    pod install
+
+Steps to run the project:
+
+* Open with xcode the kxmovie.xcworkspace.
+* Select the KxMovieExample project in the active scheme display.
+* Make sure bitcode is disabled in build settings.
+* Build the project.
+* Run the project in a connected mobile.
 
 ### Feedback
 
