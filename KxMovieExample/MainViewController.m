@@ -32,10 +32,10 @@
 
 //            @"http://eric.cast.ro/stream2.flv",
 //            @"http://liveipad.wasu.cn/cctv2_ipad/z.m3u8",
-            @"http://www.wowza.com/_h264/BigBuckBunny_175k.mov",
+            @"rtsp://stream.voiceplate.com:1935/live/test.stream",
             // @"http://www.wowza.com/_h264/BigBuckBunny_115k.mov",
             @"rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov",
-            @"http://santai.tv/vod/test/test_format_1.3gp",
+            @"http://stream.voiceplate.com:1935/live/test.stream/playlist.m3u8",
             @"http://santai.tv/vod/test/test_format_1.mp4",
         
             //@"rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov",
